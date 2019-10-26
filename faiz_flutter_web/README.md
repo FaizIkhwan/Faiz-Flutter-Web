@@ -1,6 +1,6 @@
 # faiz_flutter_web
 
-A new Flutter project.
+A new Flutter application.
 
 ## Getting Started
 
