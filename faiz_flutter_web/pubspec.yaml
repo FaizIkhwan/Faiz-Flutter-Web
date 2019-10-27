@@ -10,7 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.5.0
 
 dev_dependencies:
@@ -35,6 +34,8 @@ flutter:
     - assets/images/vacmi2.png
     - assets/images/waqf1.png
     - assets/images/waqf2.png
+    - assets/images/hadith1.jpg
+    - assets/images/hadith2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -175,7 +175,7 @@ class _WorkState extends State<Work> {
                           ),
                         ),
                         Container(
-                          width: width/4,
+                          width: width/6,
                           child: Text(
                             "${projects[i].projectAbout}",
                             style: TextStyle(
