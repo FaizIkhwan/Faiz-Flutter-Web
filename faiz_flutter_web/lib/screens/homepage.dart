@@ -34,117 +34,127 @@ class _HomepageState extends State<Homepage> {
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
 
-                  Column(
-                    children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height/6),
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
 
-                      Container(
-                        margin: EdgeInsets.only(bottom: 20.0),
-                        child: Text(
-                          "Faiz Ikhwan",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 38.0,
-                            fontWeight: FontWeight.bold,
+                        Container(
+                          margin: EdgeInsets.only(bottom: 10.0),
+                          child: Text(
+                            "Faiz Ikhwan",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 38.0,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
-                      ),
 
-                      Container(
-                        margin: EdgeInsets.all(2.5),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-
-                            Icon(
-                              FontAwesomeIcons.github,
-                              color: Color(0xFF3a364f),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 20.0),
+                          child: Text(
+                            "Mobile Apps Developer",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
                             ),
+                          ),
+                        ),
 
-                            Container(
-                              margin: EdgeInsets.only(left: 10.0),
-                              child: Text(
-                                "github.com/FaizIkhwan",
-                                style: TextStyle(
-                                  color: Colors.white70,
+                        Container(
+                          margin: EdgeInsets.all(2.5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+
+                              Icon(
+                                FontAwesomeIcons.github,
+                                color: Color(0xFF3a364f),
+                              ),
+
+                              Container(
+                                margin: EdgeInsets.only(left: 10.0),
+                                child: Text(
+                                  "github.com/FaizIkhwan",
+                                  style: TextStyle(
+                                    color: Colors.white70,
+                                  ),
                                 ),
                               ),
-                            ),
 
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
 
-                      Container(
-                        margin: EdgeInsets.all(2.5),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.all(2.5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
 
-                            Icon(
-                              FontAwesomeIcons.linkedin,
-                              color: Color(0xFF3a364f),
-                            ),
+                              Icon(
+                                FontAwesomeIcons.linkedin,
+                                color: Color(0xFF3a364f),
+                              ),
 
-                            Container(
-                              margin: EdgeInsets.only(left: 10.0),
-                              child: Text(
-                                "linkedin.com/in/faizikhwan",
-                                style: TextStyle(
-                                  color: Colors.white70,
+                              Container(
+                                margin: EdgeInsets.only(left: 10.0),
+                                child: Text(
+                                  "linkedin.com/in/faizikhwan",
+                                  style: TextStyle(
+                                    color: Colors.white70,
+                                  ),
                                 ),
                               ),
-                            ),
 
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
 
-                      Container(
-                        margin: EdgeInsets.all(2.5),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.all(2.5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
 
-                            Icon(
-                              Icons.email,
-                              color: Color(0xFF3a364f),
-                            ),
+                              Icon(
+                                Icons.email,
+                                color: Color(0xFF3a364f),
+                              ),
 
-                            Container(
-                              margin: EdgeInsets.only(left: 10.0),
-                              child: Text(
-                                "me@faizikhwan.com",
-                                style: TextStyle(
-                                  color: Colors.white70,
+                              Container(
+                                margin: EdgeInsets.only(left: 10.0),
+                                child: Text(
+                                  "me@faizikhwan.com",
+                                  style: TextStyle(
+                                    color: Colors.white70,
+                                  ),
                                 ),
                               ),
-                            ),
 
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
 
-                    ],
+                      ],
+                    ),
                   ),
 
                   Container(
-                    margin: EdgeInsets.only(top: 30.0),
-                    child: RaisedButton(
-                      child: Text(
-                        "Work",
-                        style: TextStyle(
-                          color: Colors.white70,
-                        ),
+                    alignment: Alignment.bottomRight,
+                    margin: EdgeInsets.only(bottom: 20.0, right: 20.0,),
+                    child: Text(
+                      "Built using Flutter",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 10.0,
                       ),
-                      color: Color(0xFF3a364f),
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                            builder: (context) => Work()),
-                        );
-                      },
                     ),
                   ),
 
