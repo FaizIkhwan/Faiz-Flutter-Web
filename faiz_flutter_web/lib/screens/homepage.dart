@@ -18,6 +18,8 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
+    print("width: $width");
+    print("height: $height");
 
     return Scaffold(
       body: Container(
@@ -146,14 +148,17 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
 
-                  Container(
-                    alignment: Alignment.bottomRight,
-                    margin: EdgeInsets.only(bottom: 20.0, right: 20.0,),
-                    child: Text(
-                      "Built using Flutter",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 10.0,
+                  Visibility(
+                    visible: height > 650,
+                    child: Container(
+                      alignment: Alignment.bottomRight,
+                      margin: EdgeInsets.only(bottom: 20.0, right: 20.0,),
+                      child: Text(
+                        "Built using Flutter",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 10.0,
+                        ),
                       ),
                     ),
                   ),
